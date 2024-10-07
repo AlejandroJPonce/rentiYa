@@ -1,0 +1,85 @@
+.navigator-box {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  z-index: 99999;
+}
+
+.navigator-left-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.navigator-logo-img {
+  width: 70px;
+  margin-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: .5s all;
+  border-radius: 5px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  background-color: #343434;
+  border-radius: 10px;
+  color: white;
+}
+
+.navigator-right-section {
+  width: 100%;
+  padding: 10px 30px;
+
+  .navigator-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+}
+
+.sign-in-button {
+  border: 2px solid #343434;
+  background-color: white;
+  color: #343434;
+  transition: .5s all;
+}
+
+.sign-in-button:hover {
+  background-color: #343434;
+  color: white;
+  border-color: #343434;
+}
+
+.started-button {
+  background-color: #343434;
+  color: white;
+  transition: .5s all;
+}
+
+.started-button:hover {
+  background-color: white;
+  color: #343434;
+  border-color: white;
+  box-shadow: -2px 2px 2px 2px #343434;
+}
