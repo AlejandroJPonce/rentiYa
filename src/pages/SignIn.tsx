@@ -23,7 +23,7 @@ export default function SignIn() {
       setLoading(true);
       const response = await doLoggedIn(email, password);
       if (response) {
-        navigate("/");
+        navigate("/Dashboard");
       }
     } catch (error) {
       console.log(error);

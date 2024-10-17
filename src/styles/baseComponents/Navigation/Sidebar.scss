@@ -1,0 +1,37 @@
+.sidebar-main-box {
+ position: absolute;
+ padding: 115px 0 20px 0;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ width: 80px;
+ height: 100vh;
+ border-right: 1px solid lightgray;
+}
+
+.sidebar-top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.sidebar-icon {
+  :hover {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(240, 240, 240);
+    transition: .3s all;
+    padding: .5px;
+   }
+
+   .sidebar-icon-svg-products {
+    width: 30px;
+    height: 30px;
+    color: black;
+   }
+
+}
