@@ -23,7 +23,7 @@
   justify-content: flex-start;
   max-width: 1200px;
   text-align: left;
-  gap: 20px;
+  gap: 30px;
   padding: 0;
   margin: 0;
 }
@@ -62,4 +62,8 @@
 .hero-section-complement-text {
   max-width: 500px;
   font-size: 19px;
+}
+
+.learn-more-section {
+  width: 100% !important;
 }

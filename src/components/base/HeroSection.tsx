@@ -1,6 +1,21 @@
 import "../../styles/baseComponents/HeroSection.scss";
+import LearnMore from "./heroComponents/LearnMore";
+
+import { useState } from "react";
 
 export default function HeroSection() {
+  const [showLearnMore, setShowLearnMore] = useState(false);
+
+  function showLearnMoreSection() {
+    if (showLearnMore) {
+      return (
+        <div className="learn-more-section">
+          <LearnMore />
+        </div>
+      );
+    }
+  }
+
   return (
     <>
       <div className="hero-section-main-box">
@@ -12,7 +27,7 @@ export default function HeroSection() {
             <div className="bottom-section">
               <div className="hero-section-buttons">
                 <button>Get started</button>
-                <button>Learn more</button>
+                <button onClick={() => setShowLearnMore(!showLearnMore)}>Learn more</button>
               </div>
               <div className="hero-section-complement-text">
                 <span>
@@ -21,6 +36,8 @@ export default function HeroSection() {
                 </span>
               </div>
             </div>
+
+            {showLearnMoreSection()}
           </div>
         </div>
       </div>

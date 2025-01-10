@@ -9,6 +9,10 @@ export default function Navigator() {
     navigate("/sign-in")
   }
 
+  const goPricing = () => {
+    navigate("/pricing")
+  }
+
   return (
     <>
       <div className="navigator-box">
@@ -24,7 +28,7 @@ export default function Navigator() {
             <nav>
               <ul>
                 <li> Home </li>
-                <li> Prices </li>
+                <li onClick={() => goPricing()}> Pricing </li>
                 <li> Developing </li>
                 <li> Bussines </li>
               </ul>
